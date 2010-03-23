@@ -1,0 +1,48 @@
+application: ringerous
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /
+  static_files: index.html
+  upload: index.html
+  
+- url: /tracypaktribe.html
+  static_files: tracypaktribe.html
+  upload: tracypaktribe.html
+
+- url: /frame.html
+  static_files: frame.html
+  upload: frame.html
+
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+    
+- url: /img/.*
+  static_dir: img
+  
+- url: /img/(.*)
+  static_files: img/\1
+  upload: img/(.*)
+
+- url: /newstyle.css
+  static_files: newstyle.css
+  upload: newstyle.css
+  
+- url: /style.css
+  static_files: style.css
+  upload: style.css
+
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+  
+- url: /configure
+  script: main.py
+  secure: always
+    
+- url: /.*
+  script: main.py
