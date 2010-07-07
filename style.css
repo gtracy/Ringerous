@@ -100,11 +100,27 @@ div#form-container a:hover span {
   font-size: 16px;
 }
 
+#content-container {
+	width: 950px;
+	margin: auto;
+}
+
 #form-container {
   background: #ffffff;
-  width: 600px;
+  width: 800px;
+  float: left;
   margin: auto;
   padding-top: 4px;
+  padding-bottom: 20px;
+}
+#form-container table {
+	margin: auto;
+}
+
+#donation {
+  float: right;
+  padding-top: 250px;
+  width: 150px;
 }
 
 #powered-by {
@@ -128,6 +144,7 @@ div#form-container a:hover span {
 #footer {
   border-top-color: black;
   height: 80px;
+  clear: both;
   color: #888888;
   background: #ffffff;
 }
